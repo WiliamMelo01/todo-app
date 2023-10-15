@@ -1,0 +1,39 @@
+@import "../../styles.sass"
+
+.isFirst
+    border-radius: .8em .8em 0 0
+
+.completed
+    text-decoration: line-through
+
+.task_container
+    background: $primary-color
+    display: flex
+    align-items: center
+
+    height: 4em
+    width: 100%
+    border-bottom: 2px solid $secondary-text
+    cursor: pointer
+    transition: all .5 ease
+
+    &:hover
+        opacity: .9
+
+    input
+        width: 20px
+        height: 20px
+        clip-path: circle(46% at 50% 50%)
+        margin-inline: 1em
+
+    span
+        font-family: Arial
+        width: 100%
+        flex: 1
+        text-transform: none
+        font-weight: 500
+        color: $text-color
+        font-size: 1.2em
+
+    ng-icon
+        margin-right: 1em

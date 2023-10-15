@@ -1,0 +1,8 @@
+<div (click)="changeItemStatus()" class="task_container" [ngClass]="{'isFirst': isFirst}">
+    <input type="checkbox" [checked]="completed">
+
+    <span [ngClass]="{'completed':completed}">{{task}}</span>
+
+    <ng-icon (click)="delete($event)" name="heroTrashSolid"></ng-icon>
+
+</div>

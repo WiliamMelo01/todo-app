@@ -1,0 +1,34 @@
+@import "../../styles.sass"
+
+.input_container
+    background: $primary-color
+    display: flex
+    align-items: center
+
+    height: 4em
+    width: 100%
+    border-radius: .3em
+    margin-bottom: 2em
+
+    .icon_container
+        border-radius: 50%
+        border: 1px solid $secondary-text
+
+        width: 30px
+        height: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-inline: .8em
+
+    input
+        height: 100%
+        flex: 1
+        background: transparent
+        border: none
+        font-size: 1.2em
+        outline: none
+        color: $text-color
+
+        &::placeholder
+            color: $secondary-text

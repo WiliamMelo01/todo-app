@@ -1,0 +1,12 @@
+<ng-template *ngIf="hasTasks; then showTasks; else noTasks">
+</ng-template>
+
+<ng-template #showTasks>
+    <li *ngFor="let task of tasks; first as f; index as i">
+        <app-tasks-item [isFirst]="f" [index]="i" [task]="task.task" [completed]="task.completed"></app-tasks-item>
+    </li>
+</ng-template>
+
+<ng-template #noTasks>
+    <p class="noTasks">No tasks found. Type a new task and hit 'Enter'.</p>
+</ng-template>
