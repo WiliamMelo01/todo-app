@@ -20,7 +20,7 @@ Certifique-se de ter o Angular CLI instalado no seu sistema. Caso não tenha, vo
 
 1. Clone este repositório:
 ```
-  git clone https://github.com/seu-usuario/seu-app-angular-todo-list.git
+  git clone https://github.com/wiliammelo01/seu-app-angular-todo-list.git
 ```
 
 2. Navegue até o diretório do projeto:
